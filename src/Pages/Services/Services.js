@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Container } from 'react-bootstrap';
 import Service from '../Service/Service';
 
 const Services = () => {
@@ -11,8 +12,8 @@ const Services = () => {
             .then(data => setServices(data))
     }, [])
     return (
-        <div>
-             <h2>All Services</h2>
+       <Container className='my-5' id='services'>
+             <h2 className='text-primary text-center'>All Services</h2>
             <div className='services-container'>
             {
                 services.map(service => <Service
@@ -21,7 +22,7 @@ const Services = () => {
                 ></Service>)
             }
             </div>
-        </div>
+       </Container>
     );
 };
 

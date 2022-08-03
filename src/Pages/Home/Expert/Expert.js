@@ -10,7 +10,7 @@ const Expert = ({expert}) => {
                 <Card >
                     <Card.Img variant="top rounded" src={img} />
                     <Card.Body>
-                        <Card.Title>{name}</Card.Title>
+                        <Card.Title className='text-center'>{name}</Card.Title>
                     </Card.Body>
                 </Card>
             </Col>
