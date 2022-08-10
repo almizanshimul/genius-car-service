@@ -1,0 +1,23 @@
+.form-label{
+    display: none;
+}
+
+.or-text {
+    position: relative;
+}
+
+ .or-text span {
+    position: relative;
+    background-color: white;
+    padding: 10px 25px;
+    z-index: 1;
+}
+
+.or-text::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid;
+}
